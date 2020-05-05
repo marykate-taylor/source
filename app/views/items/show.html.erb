@@ -1,0 +1,3 @@
+<h1><%= @item.title %></h1>
+<%= image_tag @item.image.url(:medium) %>
+<p><%= link_to "Download", @item.image.url(:medium), download: true %></p>

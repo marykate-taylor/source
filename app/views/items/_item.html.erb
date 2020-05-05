@@ -1,0 +1,4 @@
+<%= link_to item_path(item) do %>
+  <%= item.title %>
+  <%= image_tag item.image.url(:thumb) %>
+<% end %>

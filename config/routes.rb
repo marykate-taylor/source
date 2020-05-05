@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :users
   resource :session
 
+  resources :items
+
   get "about", to: "pages#about"
 
   root "pages#home"
