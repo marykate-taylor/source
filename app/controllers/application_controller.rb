@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
     unless is_logged_in?
       flash[:error] = "You are not logged in"
 
-      redirect_to new_user_path
+      redirect_to root_path
     end
   end
 
