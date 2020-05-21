@@ -1,3 +1,16 @@
-<h1><%= @item.title %></h1>
-<%= image_tag @item.image.url(:medium) %>
-<p><%= link_to "Download", @item.image.url(:medium), download: true %></p>
+<div class="item-page">
+  <h1><%= @item.title %></h1>
+
+<p>
+  <strong>Categories:</strong>
+  <%= format_categories @item.categories %>
+</p>
+  <%= simple_format @item.description %>
+
+  <%= image_tag @item.image.url %>
+
+  <p>
+    <%= link_to "Download", @item.image.url(:medium), download: true %>
+  </p>
+
+</div>
